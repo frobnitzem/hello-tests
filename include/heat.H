@@ -16,4 +16,7 @@
 
 #include <sstream>
 
-#include "Double.H"
+#include <Double.H>
+#ifndef HEAT_VERSION_MAJOR
+#include <version.H>
+#endif

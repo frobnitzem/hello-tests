@@ -118,6 +118,8 @@ process_args(int argc, char **argv)
     char fname[128];
     sprintf(fname, "%s/clargs.out", runame);
     FILE *outf = fopen(fname, "w");
-    fprintf(outf, "%s", clargs);
+    fprintf(outf, "heat equation example program version %d.%d\n",
+            HEAT_VERSION_MAJOR, HEAT_VERSION_MINOR);
+    fprintf(outf, "%s\n", clargs);
     fclose(outf);
 }
